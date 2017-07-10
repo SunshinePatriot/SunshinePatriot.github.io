@@ -31,6 +31,10 @@ h5 {
   margin: 0px 3%;
 }
 
+h5:hover {
+    color: #252d2d;
+}
+
 a:hover {
   text-decoration: none;
   color: #d0d0d0;
@@ -48,6 +52,7 @@ a {
 
 #logo {
   float: left;
+    opacity: 0.4;
 }
 
 #header { 
@@ -104,5 +109,5 @@ a {
 }
 .social img {
   width: 40px;
-  margin: 20px 11px;
+  margin: 20px 9px;
 }
