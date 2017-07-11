@@ -5,7 +5,7 @@ body {
 h1 {
   color: #d0d0d0;
   font-family: "Dosis", sans-serif;
-  font-size: 40px; 
+  font-size: 45px; 
   letter-spacing: 5px;
 }
 
@@ -40,6 +40,7 @@ p {
   font-family: "Lato", sans-serif;
   color: #dddddd;
   text-indent: 40px;
+    opacity: 0.7;
 }
 
 a {
@@ -91,12 +92,12 @@ a {
   border-radius: 8px;
 }
 
-.whiteHeader {
+.darkHeader {
   background-color: #252d2d;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .social {
@@ -105,5 +106,5 @@ a {
 }
 .social img {
   width: 40px;
-  margin: 20px 9px;
+  margin: 40px 9px 70px 9px;
 }

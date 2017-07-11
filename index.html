@@ -14,6 +14,7 @@
 
 <!--    links to my stylesheets-->
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
 
     
     
@@ -29,9 +30,9 @@
 <div id="header">
   <div class="container text-center">
     <img id="logo" src="img/Logo.png" style="height:40px; margin:15px">
-    <a href="#contact"><h5>CONTACT</h5></a>
-    <a href="#portfolio"><h5>PORTFOLIO</h5></a>
     <a href="#about"><h5>ABOUT</h5></a>
+    <a href="#portfolio"><h5>PORTFOLIO</h5></a>
+    <a href="#contact"><h5>CONTACT</h5></a>
   </div>
 </div>
 
@@ -44,17 +45,18 @@
   <h1>About</h1>
   <div class="row">
     <div class="col-md-8 text-left">
-      <p style="margin-top:50px">My name is Doug May. I am driven by a deep sense of curiosity about the world and how we experience it. I decided that I wanted to teach myself HTML, CSS, and JavaScript in an effort to understand web design and development. I also do freelance work as a composer and sound designer. You can check out some of my music and sound work <a href="http://www.bythewaymay.com/" target="_blank">here</a>.   </p>
+      <p id="aboutMe">My name is Doug May. I am driven by a deep sense of curiosity about the world and how we experience it. I decided that I wanted to teach myself HTML, CSS, and JavaScript in an effort to understand web design and development. I also do freelance work as a composer and sound designer. You can check out some of my music and sound work <a href="http://www.bythewaymay.com/" target="_blank">here</a>.   </p>
     </div>
     <div class="col-md-4 text-center">
-      <img class="rounded-circle" src="img/TV%20head.jpg" style="width:250px; margin-bottom: 10px">
+      <img id="me" src="img/doug.jpg">
     </div>
   </div>
   
   <div class="line"></div>
   
 <!-- Portfolio section is here ....................................-->
-  <h1 id="portfolio" >Portfolio</h1>
+    <div id="portfolio"></div>
+  <h1>Portfolio</h1>
   <div style="height:50px"></div>
 
 <!--   Portfolio Slides  -->
@@ -80,11 +82,17 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+    
+    <div class="col-md-12 text-left" style="margin-top: 50px; margin-bottom: 50px;">
+        <p>In addition to web design, I'm interesting in building websites that are dynamic and functional. As I'm working on various projects I'll be putting them here on this website for all to see! Click below to see some of the random projects that i'm working on. </p>
+    </div>
+    <button><p>Go to all Projects</p></button>
   
   <div class="line"></div>
   
 <!-- Contact section is here............................................ -->
-  <h1 id="contact">Contact</h1>
+  <div id="contact"></div>
+  <h1>Contact</h1>
   <div style="height:50px"></div>
   <div class="row">
     
@@ -100,11 +108,9 @@
     </div>
   
   </div>
-  
-  <div style="height: 80px"></div>
-
 
 </div>
+<div id="footer"><p id="credit">Designed and built by Doug May</p></div>
 <!-- End of page content................................................................................-->
   
     

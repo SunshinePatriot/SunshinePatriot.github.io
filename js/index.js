@@ -3,10 +3,10 @@ $(document).ready(function() {
     
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 0) {
-            $("#header").addClass("whiteHeader");
+            $("#header").addClass("darkHeader");
         } else {
 
-           $("#header").removeClass("whiteHeader");
+           $("#header").removeClass("darkHeader");
         }
     });
 
@@ -15,7 +15,7 @@ $(document).ready(function() {
 
         $('html, body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 700);
+        }, 500);
     });
 
 

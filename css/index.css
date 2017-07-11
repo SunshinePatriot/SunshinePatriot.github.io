@@ -1,0 +1,81 @@
+#me {
+    width: 250px;
+    border-radius: 15px;
+    opacity: 0.75;
+    margin-top: -20px;
+    margin-bottom: 35px;
+}
+
+#aboutMe {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#portfolio {
+    position: absolute;
+    top: 395px;
+    
+}
+
+#contact {
+    position: absolute;
+    top: 855px;
+}
+
+@media only screen and (max-width: 500px) {
+   #portfolio {
+    top: 785px;
+}
+    #contact {
+    top: 855px;
+}  
+}
+
+#footer {
+    background-color: #252d2d;
+    height: 150px;
+    width: 100%;
+}
+
+#credit {
+    opacity: 0.3;
+    font-size: 14px;
+    padding-top: 110px;
+}
+
+button {
+   
+    background-color: #252d2d;
+    width: 50%;
+    min-width: 250px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #252d2d;
+}
+
+button p {
+    margin: 10px;
+    color: #dddddd;
+    text-indent: 0px;
+    opacity: 0.4;
+}
+
+button:hover {
+     background-color: #324240;
+}
+
+.carousel-indicators li {
+  background-color: #252d2d;
+}
+
+.carousel-indicators .active {
+  background-color: #dddddd;
+}
+
+.carousel-control-prev {
+    margin-left: 10%;
+}
+
+.carousel-control-next {
+    margin-right: 10%;
+}
