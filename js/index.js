@@ -1,16 +1,23 @@
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 0) {
-        $("#header").addClass("whiteHeader");
-    } else {
+$(document).ready(function() {
 
-       $("#header").removeClass("whiteHeader");
-    }
-});
+    
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 0) {
+            $("#header").addClass("whiteHeader");
+        } else {
 
-$("#header").on('click', 'a', function(event){
-    event.preventDefault();
+           $("#header").removeClass("whiteHeader");
+        }
+    });
 
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 700);
+    $("#header").on('click', 'a', function(event){
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 700);
+    });
+
+
+
 });
