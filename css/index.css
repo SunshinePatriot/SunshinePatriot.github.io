@@ -19,7 +19,7 @@
 
 #contact {
     position: absolute;
-    top: 955px;
+    top: 1255px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -27,20 +27,20 @@
     top: 785px;
 }
     #contact {
-    top: 1455px;
+    top: 1855px;
 }  
 }
 
 #footer {
     background-color: #252d2d;
-    height: 150px;
+    height: 265px;
     width: 100%;
 }
 
 #credit {
     opacity: 0.3;
     font-size: 14px;
-    padding-top: 110px;
+    padding-top: 220px;
 }
 
 button {
