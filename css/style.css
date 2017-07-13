@@ -110,11 +110,11 @@ a {
 }
 
 #fadeIn {
-    -webkit-animation: fadein 900ms; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 900ms; /* Firefox < 16 */
-        -ms-animation: fadein 900ms; /* Internet Explorer */
-         -o-animation: fadein 900ms; /* Opera < 12.1 */
-            animation: fadein 900ms;
+    -webkit-animation: fadein 1400ms; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1400ms; /* Firefox < 16 */
+        -ms-animation: fadein 1400ms; /* Internet Explorer */
+         -o-animation: fadein 1400ms; /* Opera < 12.1 */
+            animation: fadein 1400ms;
 }
 
 @keyframes fadein {
