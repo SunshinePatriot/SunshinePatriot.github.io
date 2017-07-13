@@ -27,20 +27,20 @@
     top: 785px;
 }
     #contact {
-    top: 1655px;
+    top: 1650px;
 }  
 }
 
 #footer {
     background-color: #252d2d;
-    height: 265px;
+    height: 180px;
     width: 100%;
 }
 
 #credit {
     opacity: 0.3;
     font-size: 14px;
-    padding-top: 220px;
+    padding-top: 140px;
 }
 
 button {
