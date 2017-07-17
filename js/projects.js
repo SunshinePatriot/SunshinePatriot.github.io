@@ -1,4 +1,6 @@
-$(window).on("scroll", function() {
+$(document).ready(function() {
+
+    $(window).on("scroll", function() {
         if($(window).scrollTop() > 0) {
             $("#header").addClass("darkHeader");
         } else {
@@ -6,3 +8,5 @@ $(window).on("scroll", function() {
            $("#header").removeClass("darkHeader");
         }
     });
+    
+});
