@@ -110,11 +110,11 @@ a {
 }
 
 #fadeIn {
-    -webkit-animation: fadein 1400ms; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1400ms; /* Firefox < 16 */
-        -ms-animation: fadein 1400ms; /* Internet Explorer */
-         -o-animation: fadein 1400ms; /* Opera < 12.1 */
-            animation: fadein 1400ms;
+    -webkit-animation: fadein 1000ms; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1000ms; /* Firefox < 16 */
+        -ms-animation: fadein 1000ms; /* Internet Explorer */
+         -o-animation: fadein 1000ms; /* Opera < 12.1 */
+            animation: fadein 1000ms;
 }
 
 @keyframes fadein {
@@ -144,4 +144,11 @@ a {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+
+}
+
+#footer {
+    background-color: #252d2d;
+    height: 200px;
+    width: 100%;
 }

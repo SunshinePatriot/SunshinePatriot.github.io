@@ -1,0 +1,24 @@
+.btn{
+    background-color: #252d2d;
+    color: #d0d0d0;
+   border-style: none;
+}
+
+.btn:hover {
+    background-color: #324240;
+}
+.card {
+    background-color: #d0d0d0;
+   
+    border-style: none;
+}
+
+h2 {
+    color: #252d2d;
+    font-size: 30px;
+}
+
+p {
+    color: #37423c;
+    text-indent: 0;
+}
