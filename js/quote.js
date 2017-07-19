@@ -1,11 +1,15 @@
 $(document).ready(function() {
+    var currentQuote = "";
+    var currentAuthor = "";
     
     //grab first quote
     $.getJSON("https://cors-anywhere.herokuapp.com/https://talaikis.com/api/quotes/random/", function(a) {
             $("#quote").html('"' + a.quote + '"').fadeIn();
             $("#author").html("- " + a.author);
          //remove hidden css
-            $("#center,#quote,#author,#getQuote").removeClass("hidden");
+            $("#center,#quote,#author,#getQuote,#tweet").removeClass("hidden");
+        currentQuote = a.quote;
+        currentAuthor = a.author;
         });   
     
     //get new quote when button is clicked and change colors.........
@@ -14,6 +18,9 @@ $(document).ready(function() {
         $.getJSON("https://cors-anywhere.herokuapp.com/https://talaikis.com/api/quotes/random/", function(a) {
             $("#quote").html('"' + a.quote + '"').fadeIn();
             $("#author").html("- " + a.author);
+            
+            currentQuote = a.quote;
+            currentAuthor = a.author;
         
         });
         
@@ -52,6 +59,11 @@ $(document).ready(function() {
         };
         
     });
+    
+    $("#tweet").on('click', function() {
+        window.open('https://twitter.com/intent/tweet?text=' + currentQuote + ' -' + currentAuthor);
+        
+    })
     //end click functions.............................................
     
 });

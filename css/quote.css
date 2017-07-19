@@ -19,7 +19,7 @@ body {
 button {
    transition: 2s;
     background-color: #324240;
-    width: 50%;
+    width: 100%;
     padding: 20px;
     min-width: 250px;
     border-radius: 10px;
@@ -90,4 +90,14 @@ h2 {
 
 .hidden {
     visibility: hidden;
+}
+
+img {
+    transition: 300ms;
+    margin-bottom: -70px;
+}
+
+img:hover {
+    transition: 300ms;
+    opacity: 0.2;
 }
