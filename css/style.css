@@ -152,3 +152,7 @@ a {
     height: 200px;
     width: 100%;
 }
+
+*:focus {
+    outline: none;
+}
