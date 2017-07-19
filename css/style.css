@@ -156,3 +156,7 @@ a {
 *:focus {
     outline: none;
 }
+
+button {
+    outline: none !important;
+}
