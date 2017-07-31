@@ -87,5 +87,12 @@ if ("geolocation" in navigator) {
     });
     
     
+    //    Display location services warning after a few seconds.....................
+    setTimeout(function() {
+        $("#warning").removeClass("hidden");
+    }, 5000);
+    
+    
+    
     
 });
