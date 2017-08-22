@@ -13,8 +13,10 @@
 <link href="https://fonts.googleapis.com/css?family=Dosis|Lato" rel="stylesheet">
 
 <!--    links to my stylesheets-->
+<link type="text/css" rel="stylesheet" href="css/flickity.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/index.css">
+    
 
 <!--    Link to Favicon-->  
 <link rel="icon" href="./img/favicon.ico?" type="image/x-icon">   
@@ -63,28 +65,12 @@
   <div style="height:50px"></div>
 
 <!--   Portfolio Slides  -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-  </ol>
-  <div class="carousel-inner text-center" role="listbox">
-    <div class="carousel-item active">
-      <img class="d-block img-fluid" src="img/BMport.png" alt="First slide">
+    <div class="carousel-wrap">
+        <div class="main-carousel" data-flickity='{ "autoPlay": 5000 }'>
+            <div class="carousel-cell"><img class="client" src="img/SBport.png"></div>
+            <div class="carousel-cell"><img class="client" src="img/BMport.png"></div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid" src="img/SBport.png" alt="Second slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
     
     <div class="col-md-12 text-left" style="margin-top: 50px; margin-bottom: 50px;">
         <p>In addition to web design, I'm interesting in building websites that are dynamic and functional. As I'm working on various projects I'll be putting them here on this website for all to see! Click below to see some of the random projects that i'm working on. </p>
@@ -126,6 +112,7 @@
     
 <!--    Links to my JS-->
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/flickity.js"></script>
 
 </body>
 </html>

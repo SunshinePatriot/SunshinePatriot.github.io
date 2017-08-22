@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+   
     
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 0) {

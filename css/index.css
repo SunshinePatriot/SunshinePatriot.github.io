@@ -22,15 +22,6 @@
     top: 1255px;
 }
 
-@media only screen and (max-width: 500px) {
-   #portfolio {
-    top: 785px;
-}
-    #contact {
-    top: 1650px;
-}  
-}
-
 #footer {
     background-color: #252d2d;
     height: 200px;
@@ -64,18 +55,69 @@ button:hover {
      background-color: #324240;
 }
 
-.carousel-indicators li {
-  background-color: #252d2d;
+.carousel-wrap {
+    max-width: 700px;
+    margin: auto;
+}
+.carousel-cell {
+    width: 100%;
 }
 
-.carousel-indicators .active {
-  background-color: #dddddd;
+.carousel-cell img {
+    width: 90%;
 }
 
-.carousel-control-prev {
-    margin-left: 10%;
+/* smaller, dark, rounded square */
+.flickity-prev-next-button {
+  min-width: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: #252d2d;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: #d0d0d0;
+}
+.flickity-prev-next-button.no-svg {
+  color: whitesmoke;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: 0%;
+}
+.flickity-prev-next-button.next {
+  right: 0%;
 }
 
-.carousel-control-next {
-    margin-right: 10%;
+/* white circles */
+.flickity-page-dots .dot {
+  width: 14px;
+  height: 14px;
+  opacity: 0.9;
+  background: transparent;
+  border: 2px solid #252d2d;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #252d2d;
+}
+
+
+@media only screen and (max-width: 500px) {
+   #portfolio {
+    top: 785px;
+}
+    
+    #contact {
+    top: 1650px;
+} 
+    
+    .flickity-prev-next-button {
+  visibility: hidden;
+}
+    
 }

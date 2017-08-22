@@ -1,0 +1,42 @@
+td {
+    border: 1px solid #d0d0d3;
+    width: 3px;
+    height: 3px;
+}
+
+
+.alive {
+    background-color: #151516;
+}
+
+.dead {
+  
+    background-color: #fcfdff;
+}
+
+table {
+    margin: 2% auto;
+    
+}
+
+#world {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+li {
+    font-size: 14px;
+    margin:3%;
+    font-weight: 700;
+    color: #d0d0d0;
+    opacity: 0.8;
+}
+
+button {
+    margin:1%;
+}
+

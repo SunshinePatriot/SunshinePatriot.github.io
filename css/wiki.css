@@ -1,0 +1,39 @@
+input[type=text] {
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text] {
+    transition: 500ms;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+    background-color: #8d9692;
+    color: blue;
+}
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    transition: 600ms;
+    width: 90%;
+    background-color: #f0f0f0;
+}
+
+.search {
+    color: #769693;
+}
+
+.search:hover {
+    color: #d0d0d0;
+    cursor: pointer
+}
+
+#error {
+    color: red;
+    opacity: 0.5;
+}
+
+.hidden {
+    visibility: hidden;
+}
