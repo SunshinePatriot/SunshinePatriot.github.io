@@ -11,6 +11,10 @@ body {
     
 }
 
+.colors:hover {
+    cursor: pointer;
+}
+
 #red {
     margin-top: 40px;
     background-color: red;
