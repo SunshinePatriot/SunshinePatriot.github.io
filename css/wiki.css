@@ -1,23 +1,25 @@
 input[type=text] {
-    width: 150px;
+    width: 80%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 
 input[type=text] {
-    transition: 500ms;
+    transition: 400ms;
     border-radius: 20px;
     border: none;
     padding: 5px;
     padding-left: 20px;
     background-color: #8d9692;
-    color: blue;
+    color: #232b26;
+    max-width: 500px;
 }
-/* When the input field gets focus, change its width to 100% */
+/* When the input field gets focus, change its width to 30% */
 input[type=text]:focus {
-    transition: 600ms;
+    transition: 300ms;
     width: 90%;
     background-color: #f0f0f0;
+    max-width: 600px;
 }
 
 .search {
@@ -36,4 +38,21 @@ input[type=text]:focus {
 
 .hidden {
     visibility: hidden;
+}
+
+.resultBlock {
+    background-color: #2a3532;
+    margin: 20px;
+    padding: 2px 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.resultBlock h2 {
+    color: #769693;
+}
+
+
+.resultBlock p {
+    font-size: 16px;
 }

@@ -3,13 +3,39 @@ $(document).ready(function(){
 //Define global variables..............................................................................
     var clickSearch = $("#search");
     var typeSearch = $("#userSearch");
-    var api = 'https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&prop=extracts&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=';
+    var api = 'https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=opensearch&search=';
     
     
 //This function makes the call and gets the data..................................................................
-    function getData() {
+    var getData = function() {
+        
+//        first clear previous results
+        $("#results").html("");
+        
+//        grab input and make request
         var query = typeSearch.val();
+        var url = api + query
+        $.getJSON(url, function(results) {
+//           do stuff with the results here
+            var resultsLength = results[1].length;
+            for (var i=0; i < resultsLength; i++) {
+                $("#results").prepend("<div class='resultBlock animated bounceInUp'> <a target='_blank' href=" + results[3][i] + "> <h2>" + results[1][i] + "</h2></a><p>" + results[2][i] + "</p></div>");
+            }
+        });
     }
+    
+    
+//    run function on click
+    clickSearch.on('click', function() {
+        getData();
+    });
+    
+//    run function on enter press
+    typeSearch.keypress(function(e) {
+        if (e.keyCode === 13) {
+            getData();
+        }
+    });
     
     
     
