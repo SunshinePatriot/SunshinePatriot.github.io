@@ -1,25 +1,37 @@
-.btn{
-    background-color: #252d2d;
-    color: #d0d0d0;
-   border-style: none;
+#header {
+    height: 70px;
 }
 
-.btn:hover {
-    background-color: #324240;
+#headerButton {
+    transition: 300ms;
+    opacity: 1;
+    height: 50px;
+    width: 70px;
+    float: left;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 5px;
 }
-.card {
+
+#headerButton:hover {
+    cursor: pointer;
+/*    height: 60px;*/
+    background-color: #344345;
+}
+
+#header h3 {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.block {
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.block img {
+    width: 80%;
+    height: 80%;
     border-radius: 10px;
-    background-color: #d0d0d0;
-    margin: 20px 0;
-    border-style: none;
-}
-
-h2 {
-    color: #252d2d;
-    font-size: 30px;
-}
-
-p {
-    color: #37423c;
-    text-indent: 0;
+    margin-bottom: 10px;
+    
 }

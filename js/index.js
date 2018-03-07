@@ -1,28 +1,24 @@
 $(document).ready(function() {
 
-    $('.main-carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
-});
-   
+
+   setTimeout(function(){
+       $(".downQuick").addClass("animated fadeInDown");
+       $(".downQuick").removeClass("hidden");
+   }, 50);
     
-    $(window).on("scroll", function() {
-        if($(window).scrollTop() > 0) {
-            $("#header").addClass("darkHeader");
-        } else {
-
-           $("#header").removeClass("darkHeader");
-        }
-    });
-
-    $("#header").on('click', 'a', function(event){
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-    });
+   setTimeout(function(){
+       $(".upSlow").addClass("animated fadeInUp");
+       $(".upSlow").removeClass("hidden");
+   }, 200); 
+    
+    
+    
+    
+    
+    
+    
+    
+   
 
 
 

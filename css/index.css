@@ -1,123 +1,61 @@
-#me {
-    width: 250px;
-    border-radius: 15px;
-    opacity: 0.70;
-    margin-top: -20px;
-    margin-bottom: 35px;
-}
-
-#aboutMe {
+#links {
+    float: right;
     margin-top: 40px;
-    margin-bottom: 50px;
 }
 
-#portfolio {
-    position: absolute;
-    top: 395px;
-    
+#links a {
+    transition: 300ms;
+    display: block;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-family: "Abel", sans-serif;
+    font-size: 12px;
+    color: #d0d0d0;
+    margin: 5px 0;
 }
 
-#contact {
-    position: absolute;
-    top: 1255px;
+#links a:hover {
+    cursor: pointer;
+    color: #435b5e;
 }
 
-#footer {
-    background-color: #252d2d;
-    height: 200px;
-    width: 100%;
+#nameCard {
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
 }
 
-#credit {
-    opacity: 0.3;
-    font-size: 14px;
-    padding-top: 140px;
+#header {
+    height: 170px;
 }
 
-button {
-   
-    background-color: #252d2d;
-    width: 50%;
-    min-width: 250px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #252d2d;
+#headerButton {
+    transition: 300ms;
+    opacity: 1;
+    height: 150px;
+    width: 70px;
+    float: left;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 5px;
 }
 
-button p {
-    margin: 10px;
-    color: #dddddd;
-    text-indent: 0px;
-    opacity: 0.4;
+#headerButton:hover {
+    cursor: pointer;
+    height: 160px;
+    background-color: #344345;
 }
 
-button:hover {
-     background-color: #324240;
+#header img {
+    transition: 300ms;
+    opacity: 1;
+    width: 30px;
+    margin-right: 8px;
+    margin-top: 3px;
+    margin-bottom: 5px;
 }
 
-.carousel-wrap {
-    max-width: 700px;
-    margin: auto;
-}
-.carousel-cell {
-    width: 100%;
-}
-
-.carousel-cell img {
-    width: 90%;
-}
-
-/* smaller, dark, rounded square */
-.flickity-prev-next-button {
-  min-width: 0px;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background: transparent;
-}
-.flickity-prev-next-button:hover {
-  background: #252d2d;
-}
-/* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: #d0d0d0;
-}
-.flickity-prev-next-button.no-svg {
-  color: whitesmoke;
-}
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: 0%;
-}
-.flickity-prev-next-button.next {
-  right: 0%;
-}
-
-/* white circles */
-.flickity-page-dots .dot {
-  width: 14px;
-  height: 14px;
-  opacity: 0.9;
-  background: transparent;
-  border: 2px solid #252d2d;
-}
-/* fill-in selected dot */
-.flickity-page-dots .dot.is-selected {
-  background: #252d2d;
-}
-
-
-@media only screen and (max-width: 500px) {
-   #portfolio {
-    top: 785px;
-}
-    
-    #contact {
-    top: 1650px;
-} 
-    
-    .flickity-prev-next-button {
-  visibility: hidden;
-}
+#header img:hover {
+    opacity: 0.7;
+    cursor: pointer;
     
 }

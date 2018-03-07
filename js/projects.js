@@ -1,12 +1,9 @@
 $(document).ready(function() {
 
-    $(window).on("scroll", function() {
-        if($(window).scrollTop() > 0) {
-            $("#header").addClass("darkHeader");
-        } else {
-
-           $("#header").removeClass("darkHeader");
-        }
-    });
+    setTimeout(function(){
+       $(".downQuick").addClass("animated fadeInDown");
+       $(".downQuick").removeClass("hidden");
+   }, 50);
+    
     
 });

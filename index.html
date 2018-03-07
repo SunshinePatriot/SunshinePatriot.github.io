@@ -10,12 +10,12 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 <!--    Links to fonts-->
-<link href="https://fonts.googleapis.com/css?family=Dosis|Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
 <!--    links to my stylesheets-->
-<link type="text/css" rel="stylesheet" href="css/flickity.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/animate.css">
     
 
 <!--    Link to Favicon-->  
@@ -25,82 +25,35 @@
   
 </head>
 
-<body>
+<body class="fadeIn">
   
 
 <!-- Header section here -->
-<div id="about"></div>
-<div id="header">
-  <div class="container text-center">
-      <a href="#about"><img id="logo" src="/img/Logo.png" style="height:40px; margin:15px"></a>
-    <a href="#about"><h5>ABOUT</h5></a>
-    <a href="#portfolio"><h5>PORTFOLIO</h5></a>
-    <a href="#contact"><h5>CONTACT</h5></a>
-  </div>
-</div>
-
-<div style="height: 32px"></div>
-
-<!-- Page content all goes here!! ..............................................................-->
-
-<div class="container text-center">
- <div class="line"></div>
-<!--   About me section here .................................... -->
-<div id="fadeIn">
-  <h1>About</h1>
-  <div class="row">
-    <div class="col-md-8 text-left">
-      <p id="aboutMe">My name is Doug May. I am driven by a deep sense of curiosity about the world and how we experience it. I decided that I wanted to teach myself HTML, CSS, and JavaScript in an effort to understand web design and development. I also do freelance work as a composer and sound designer. You can check out some of my music and sound work <a href="http://www.bythewaymay.com/" target="_blank">here</a>.   </p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img id="me" src="img/doug.jpg">
-    </div>
-  </div>
-  
-  <div class="line"></div>
-  
-<!-- Portfolio section is here ....................................-->
-    <div id="portfolio"></div>
-  <h1>Portfolio</h1>
-  <div style="height:50px"></div>
-
-<!--   Portfolio Slides  -->
-    <div class="carousel-wrap">
-        <div class="main-carousel" data-flickity='{ "autoPlay": 5000 }'>
-            <div class="carousel-cell"><img class="client" src="img/SBport.png"></div>
-            <div class="carousel-cell"><img class="client" src="img/BMport.png"></div>
+<div id="header" class="container">
+    <div id="headerButton" class="accent hidden downQuick"></div>
+    <div id="nameCard">
+        <h1 class="hidden downQuick" id="titleName">DOUG MAY</h1>
+        <div class="hidden upSlow">
+            <h3>dougmay17@gmail.com</h3>
+            <h3>801-300-0256</h3>
+            <img src="/img/IG.png"><img src="/img/FB.png"><img src="/img/Twitter.png">
         </div>
     </div>
     
-    <div class="col-md-12 text-left" style="margin-top: 50px; margin-bottom: 50px;">
-        <p>In addition to web design, I'm interesting in building websites that are dynamic and functional. As I'm working on various projects I'll be putting them here on this website for all to see! Click below to see some of the random projects that i'm working on. </p>
-    </div>
-    <a href="/pages/projects.html"><button><p>Go to all Projects</p></button></a>
-  
-  <div class="line"></div>
-  
-<!-- Contact section is here............................................ -->
-  <div id="contact"></div>
-  <h1>Contact</h1>
-  <div style="height:50px"></div>
-  <div class="row">
-    
-    <div class="col-md-12 text-center">
-      <h2>Email: dougmay17@gmail.com</h2>
-      <h2>Phone: +1 (801) 300-0256</h2>
+    <div id="links" class="hidden downQuick">
+        <a>ABOUT</a>
+        <a href="/pages/projects.html">PROJECTS</a>
+        <a>CONTACT</a>
     </div>
     
-    <div class="text-center social">
-      <a href="https://www.instagram.com/drobertmay/" target="_blank"><img src="img/IG.png"></a>
-      <a href="https://www.facebook.com/profile.php?id=529351823" target="_blank"><img src="img/FB.png"></a>
-      <a href="https://twitter.com/DRobertMay?lang=en" target="_blank"><img src="img/Twitter.png"></a>
-    </div>
-  
-  </div>
+</div>
 
-</div>
-</div>
-<div id="footer"><p id="credit">Designed and built by Doug May</p></div>
+
+
+<!-- Page content all goes here!! ..............................................................-->
+
+
+
 <!-- End of page content................................................................................-->
   
     
@@ -112,7 +65,6 @@
     
 <!--    Links to my JS-->
     <script src="js/index.js"></script>
-    <script type="text/javascript" src="js/flickity.js"></script>
 
 </body>
 </html>
