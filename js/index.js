@@ -22,7 +22,7 @@ $(document).ready(function() {
                 $("#headerCollapse").removeClass("openMenu");
                 $("#headerCollapse").addClass("closeMenu");
                  menuOpen = false;
-            }, 300);
+            }, 450);
            
         } else {
             
