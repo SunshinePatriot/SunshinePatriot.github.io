@@ -16,20 +16,19 @@ $(document).ready(function() {
     $("#hamburger").on('click', function(){
        
         if(menuOpen) {
-            $("#links").addClass("fadeOut");
+            $("#links").addClass("hidden");
             $("#links").removeClass("fadeIn");
             setTimeout(function(){
                 $("#headerCollapse").removeClass("openMenu");
                 $("#headerCollapse").addClass("closeMenu");
                  menuOpen = false;
-            }, 450);
+            }, 200);
            
         } else {
             
             $("#headerCollapse").removeClass("closeMenu");
             $("#headerCollapse").addClass("openMenu");
             setTimeout(function(){
-                $("#links").removeClass("fadeOut");
                 $("#links").removeClass("hidden");
                 $("#links").addClass("fadeIn");
                  menuOpen = true;
