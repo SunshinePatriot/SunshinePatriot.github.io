@@ -14,6 +14,27 @@ var clear = document.getElementById("clear");
 
 var tdNodelist = document.getElementsByTagName("td");
 var allCells = tdNodelist.length;
+    
+var randomizeFunc = function() {
+    for (i=180; i < allCells -180; i++ ) {
+            var random = 100*Math.random();
+                if (random >= 75) {
+                    tdNodelist[i].className = "alive";
+                } else {
+                    tdNodelist[i].className = "dead";
+                }     
+        } 
+}
+randomizeFunc();
+    
+var hideEdges = function() {
+    for (i=0;i<180;i++){
+        tdNodelist[i].className = "unseen";
+        tdNodelist[7920 + i].className = "unseen";
+    }
+}
+hideEdges();
+
 
 
 function sleep(ms) {
@@ -25,20 +46,12 @@ function sleep(ms) {
 // PATTERNS! These functions watch for clicks..................................................
 
 randomize.onclick = function () {
-    // randomize first
-        for (i=0; i < allCells; i++ ) {
-            var random = 100*Math.random();
-                if (random >= 75) {
-                    tdNodelist[i].className = "alive";
-                } else {
-                    tdNodelist[i].className = "dead";
-                }     
-    } 
+    randomizeFunc();
 }
 
 pulsar.onclick = function () {
     //set all cells to class "dead"
-    for (i=0; i< allCells; i++) {
+    for (i=180; i< allCells-180; i++) {
         tdNodelist[i].className = "dead";
     }
     
@@ -95,7 +108,7 @@ pulsar.onclick = function () {
 
 gun.onclick = function () {
     //set all cells to class "dead"
-    for (i=0; i< allCells; i++) {
+    for (i=180; i< allCells-180; i++) {
         tdNodelist[i].className = "dead";
     } 
     
@@ -201,7 +214,8 @@ start.onclick = async function () {
            
         }
       } 
-    await sleep(10);
+    hideEdges();
+    await sleep(25);
         
     } while (pause === false);
 }
@@ -222,7 +236,7 @@ stop.onclick = function () {
 // clear everything...........................................................................
 clear.onclick = function () {
     //set all cells to class "dead"
-    for (i=0; i< allCells; i++) {
+    for (i=180; i< allCells-180; i++) {
         tdNodelist[i].className = "dead";
     }
 }
