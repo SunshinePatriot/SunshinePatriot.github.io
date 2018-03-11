@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    var menuOpen = false;
 
    setTimeout(function(){
        $(".downQuick").addClass("animated fadeInDown");
@@ -12,7 +13,31 @@ $(document).ready(function() {
    }, 400); 
     
     
-    
+    $("#hamburger").on('click', function(){
+       
+        if(menuOpen) {
+            $("#links").addClass("fadeOut");
+            $("#links").removeClass("fadeIn");
+            setTimeout(function(){
+                $("#headerCollapse").removeClass("openMenu");
+                $("#headerCollapse").addClass("closeMenu");
+                 menuOpen = false;
+            }, 300);
+           
+        } else {
+            
+            $("#headerCollapse").removeClass("closeMenu");
+            $("#headerCollapse").addClass("openMenu");
+            setTimeout(function(){
+                $("#links").removeClass("fadeOut");
+                $("#links").removeClass("hidden");
+                $("#links").addClass("fadeIn");
+                 menuOpen = true;
+            }, 300);
+        }
+
+        
+    });
     
     
     

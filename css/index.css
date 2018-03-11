@@ -1,17 +1,18 @@
 #links {
-    float: right;
-    margin-top: 40px;
+    margin:auto;
+    margin-top: 60px;
+    margin-right: -30px;
 }
 
 #links a {
     transition: 300ms;
-    display: block;
     letter-spacing: 4px;
     font-weight: 100;
     font-family: "Abel", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #d0d0d0;
-    margin: 5px 0;
+    margin-bottom: -20px;
+    margin-right: 10%;
 }
 
 #links a:hover {
@@ -39,23 +40,75 @@
     border-bottom-right-radius: 5px;
 }
 
-#headerButton:hover {
-    cursor: pointer;
-    height: 160px;
-    background-color: #344345;
+#headerCollapse {
+    overflow: hidden;
+    position: absolute;
+    transition: 300ms;
+    opacity: 1;
+    height: 150px;
+    width: 0%;
+    left: 60px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 5px;
+    z-index: 100;
 }
 
 #header img {
     transition: 300ms;
     opacity: 1;
-    width: 30px;
     margin-right: 8px;
     margin-top: 3px;
     margin-bottom: 5px;
 }
 
 #header img:hover {
-    opacity: 0.7;
     cursor: pointer;
     
+}
+
+.social {
+    width: 30px;
+}
+
+#hamburger {
+    width: 44px;
+    position: absolute;
+    right: 20px;
+    top: 55px;
+}
+
+@media only screen and (max-width: 500px) {
+    #links a {
+        margin-right: 12px;
+        font-size: 12px;
+    }
+    #links {
+        margin-right: 15px;
+    }
+}
+
+.openMenu {
+    animation: openMenu 300ms ease-in normal forwards;
+}
+
+.closeMenu {
+    animation: closeMenu 300ms cubic-bezier(0.5,0.2,0.75,1) normal forwards;
+}
+
+@keyframes openMenu {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes closeMenu {
+    from {
+        width: 65%;
+    }
+    to {
+        width: 0%;
+    }
 }
