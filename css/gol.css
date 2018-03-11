@@ -53,3 +53,7 @@ button p {
     margin-bottom: 0px;
     opacity: 1;
 }
+
+ol {
+    margin-left: -30px;
+}
