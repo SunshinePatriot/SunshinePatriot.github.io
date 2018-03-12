@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
     setTimeout(function(){
-       $(".downQuick").addClass("animated fadeInDown");
-       $(".downQuick").removeClass("hidden");
-   }, 50);
+       $(".downSlow").addClass("animated fadeInDown");
+       $(".downSlow").removeClass("hidden");
+   }, 600);
     
     
 });

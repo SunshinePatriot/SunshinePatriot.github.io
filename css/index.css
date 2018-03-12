@@ -70,13 +70,15 @@
 }
 
 #hamburger {
-    width: 44px;
+    transition: 200ms;
+    width: 31px;
     position: absolute;
     right: 20px;
-    top: 55px;
+    top: 58px;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     #links a {
         margin-right: 12px;
         font-size: 12px;
@@ -84,20 +86,24 @@
     #links {
         margin-right: 15px;
     }
+    #hamburger {
+        right: 15px;
+    }
 }
 
 .openMenu {
-    animation: openMenu 350ms cubic-bezier(0.5,0.75,0.75,1) normal forwards;
+    animation: openMenu 350ms cubic-bezier(0.75,0.18,0.5,0.7) normal forwards;
 }
 
 .closeMenu {
-    animation: closeMenu 350ms cubic-bezier(0.5,0.75,0.75,1) normal forwards;
+    animation: closeMenu 300ms cubic-bezier(0.75,0.2,0.3,0.7) normal forwards;
 }
 
 @keyframes openMenu {
     from {
         width: 0%;
     }
+   
     to {
         width: 65%;
     }
