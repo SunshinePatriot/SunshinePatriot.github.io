@@ -78,10 +78,10 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     #links a {
-        margin-right: 12px;
-        font-size: 12px;
+        margin-right: 5px;
+        font-size: 11px;
     }
     #links {
         margin-right: 15px;
