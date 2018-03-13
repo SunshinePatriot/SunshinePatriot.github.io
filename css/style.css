@@ -2,6 +2,10 @@ body {
   background-color: #2d2d2d;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .accent {
     background-color: #435b5e;
 }
@@ -87,9 +91,7 @@ a {
     outline: none;
 }
 
-.hidden {
-    visibility: hidden;
-}
+
 
 a:hover {
     cursor: pointer;
