@@ -4,6 +4,8 @@ $(document).ready(function() {
     
     window.onload = function() {
         
+        $("body").removeClass("hidden");
+        
       setTimeout(function(){
        $(".downQuick").addClass("animated fadeInDown");
        $(".downQuick").removeClass("hidden");
