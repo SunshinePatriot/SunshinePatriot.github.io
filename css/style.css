@@ -3,7 +3,7 @@ body {
 }
 
 .hidden {
-    display:none;
+    visibility: hidden;
 }
 
 .accent {
