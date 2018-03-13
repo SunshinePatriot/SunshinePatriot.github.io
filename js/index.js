@@ -2,9 +2,7 @@ $(document).ready(function() {
 
     var menuOpen = false;
     
-    window.onload = function() {
-        
-        $("body").removeClass("hidden");
+    
         
       setTimeout(function(){
        $(".downQuick").addClass("animated fadeInDown");
@@ -21,7 +19,7 @@ $(document).ready(function() {
        $(".slowFade").removeClass("hidden");
    }, 300);   
         
-    };
+
 
    
     
