@@ -1,21 +1,27 @@
 $(document).ready(function() {
 
     var menuOpen = false;
-
-   setTimeout(function(){
+    
+    window.onload = function() {
+        
+      setTimeout(function(){
        $(".downQuick").addClass("animated fadeInDown");
        $(".downQuick").removeClass("hidden");
-   }, 250);
+   }, 200);
     
    setTimeout(function(){
        $(".upSlow").addClass("animated fadeInUp");
        $(".upSlow").removeClass("hidden");
-   }, 400); 
+   }, 300); 
     
     setTimeout(function(){
        $(".slowFade").addClass("animated fadeIn");
        $(".slowFade").removeClass("hidden");
-   }, 400); 
+   }, 300);   
+        
+    };
+
+   
     
     
     $("#hamburger").on('click', function(){
