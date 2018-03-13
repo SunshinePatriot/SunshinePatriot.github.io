@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
     var menuOpen = false;
-    
+    $("#headerCollapse").removeClass("openMenu");
+    $("#headerCollapse").removeClass("closeMenu");
     
         
       setTimeout(function(){
