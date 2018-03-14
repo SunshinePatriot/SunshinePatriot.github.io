@@ -3,8 +3,8 @@ body {
 }
 
 img {
-    width: 140px;
-    margin: 40px auto;
+    height: 120px;
+    margin: 25px auto;
 }
 
 h2 {
@@ -17,6 +17,7 @@ p {
 }
 
 #temp {
+    margin-top: 10px;
     color: #5f797d;
     cursor: pointer;
 }
@@ -27,4 +28,24 @@ p {
 
 .hidden {
     visibility: hidden;
+}
+
+.flash {
+    animation: flasher 800ms normal ease-in-out infinite;
+}
+
+@keyframes flasher {
+    0% {
+        opacity: 0.3;
+       
+
+    }
+    50% {
+/*        color: #0f5399;*/
+        opacity: 1;
+       
+    }
+    100% {
+        opacity: 0.3;
+    }
 }

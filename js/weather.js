@@ -49,10 +49,24 @@ $(document).ready(function() {
                    
             }
      
-           $("#summary").html(weather.currently.summary);
+          
            $("#location").html("Your Location");
-           $("#temp").html(tempF + " &#8457");
-           $("#icon").removeClass("hidden");
+           $("#location").removeClass("flash");
+
+           
+           setTimeout(function(){
+               $("#icon").addClass("fadeInUp");
+               $("#icon").removeClass("hidden");
+               $("#temp").removeClass("hidden");
+               $("#temp").html(tempF + " &#8457");
+               $("#temp").addClass("fadeInUp");
+               $("#summary").removeClass("hidden");
+               $("#summary").html(weather.currently.summary);
+               $("#summary").addClass("fadeInUp");
+              
+               
+           }, 300)
+           
          
 //           End of magic stuff................................................................................ 
        });
@@ -68,7 +82,7 @@ if ("geolocation" in navigator) {
     
 } else {
   /* geolocation IS NOT available */
-    alert("This browser does not support geolocation.");
+    $("#warning").removeClass("hidden");
 }
     
     
@@ -87,10 +101,7 @@ if ("geolocation" in navigator) {
     });
     
     
-    //    Display location services warning after a few seconds.....................
-    setTimeout(function() {
-        $("#warning").removeClass("hidden");
-    }, 5000);
+
     
     
     
