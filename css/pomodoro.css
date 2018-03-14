@@ -57,7 +57,7 @@ button {
     background-color: #655c50;
     border-style: none;
     color: #cacaca;;
-    font-family: "Dosis";
+    font-family: "Abel", sans-serif;
     width: 90px;
     margin-top: 10px;
     opacity: 0.7;
@@ -74,7 +74,7 @@ button:hover {
     transition: 700ms;
     width: 20px;
     height: 20px;
-    border-radius: 20%;
+    border-radius: 15%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -102,12 +102,13 @@ button:hover {
 }
 @keyframes spinner {
     0% {
-      
     }
-    80% {
-        transform: rotate(330deg);
+ 
+    50% {
+        transform: rotate(270deg);
+       
     }
     100% {
-        transform: rotate(30deg)
+        transform: rotate(45deg);
     }
 }

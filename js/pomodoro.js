@@ -9,6 +9,7 @@ $(document).ready(function() {
     var sessionTimeSeconds = 0;
     var breakTimeSeconds = 0;
     var intervalID = null;
+    var currentState = "";
     function intervalManager(flag, clock, time) {
         if(flag) {
             intervalID = setInterval(clock, time);
@@ -176,7 +177,7 @@ $(document).ready(function() {
         } else {
             selector.removeClass("off");
             selector.addClass("on");
-            selector.html("ON");
+            selector.html("ON&nbsp");
             alarmAudio = true;
         }  
     });
@@ -191,6 +192,7 @@ $(document).ready(function() {
             running = false; 
             $(".box").removeClass("breakRed");
             $(".box").removeClass("sessionGreen");
+            document.title = "Pomodoro Clock";
             
         } else {
             $("#minutes").html(sessionTime);
@@ -209,6 +211,7 @@ $(document).ready(function() {
 //    Clock function definition.............................................................
         var clock = function() { 
         if(sessionTimeSeconds > 0) {
+            currentState = "Session";
             var seconds = sessionTimeSeconds % 60;
             var minutes = Math.floor(sessionTimeSeconds/60);
             if (seconds < 10) {
@@ -237,6 +240,7 @@ $(document).ready(function() {
             $(".box").removeClass("sessionGreen");
             $(".box").addClass("breakRed");
         } else if(breakTimeSeconds > 0) {
+            currentState = "Break";
             var seconds = breakTimeSeconds % 60;
             var minutes = Math.floor(breakTimeSeconds/60);
             if (seconds < 10) {
@@ -264,10 +268,9 @@ $(document).ready(function() {
                 playAlarmSound();
             }
             $(".box").removeClass("breakRed");
-            $(".box").addClass("sessionGreen");
-            
-            
+            $(".box").addClass("sessionGreen");  
         }
+            document.title = currentState + " - " + $("#minutes").html() + ":" + $(".secFix").html() +  $("#seconds").html();
     }
 //    END clock function....................................................................
         
