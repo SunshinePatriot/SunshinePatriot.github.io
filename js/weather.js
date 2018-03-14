@@ -4,14 +4,18 @@ $(document).ready(function() {
     var tempF = 0;
     var tempC = 0;
     var conversion = true;
+    var errorMessage = true;
+    var dataSuccess = false;
     
 //This executes as long as geolocation is available
    var showWeather = function(lat,lon) {
        $.getJSON("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/b78fa81cd141d63bcc6f13f0cbd22e44/" + lat +"," + lon + "?exclude=minutely,hourly,daily,alerts,flags", function(weather) {
            
 //           This is the magic stuff here. weather is the JSON object..........................................
-            tempF = Math.floor(weather.currently.temperature);
-           
+           tempF = Math.floor(weather.currently.temperature);
+           errorMessage = false;
+           dataSuccess = true;
+
            switch (weather.currently.icon) {
                    
                case "clear-day":
@@ -72,7 +76,6 @@ $(document).ready(function() {
        });
    };
     
-    
 //    Check to see if geolocation is even availabe in the browser, if so execute function defined above..........
 if ("geolocation" in navigator) {
   /* geolocation is available */
@@ -83,6 +86,7 @@ if ("geolocation" in navigator) {
 } else {
   /* geolocation IS NOT available */
     $("#warning").removeClass("hidden");
+    $("#warning").addClass("fadeInUp");
 }
     
     
@@ -100,10 +104,21 @@ if ("geolocation" in navigator) {
         
     });
     
+// add error after 5 seconds if data hasn't been grabbed successfully 
+setTimeout(function(){
+    if(errorMessage) {
+        $("#warning").removeClass("hidden");
+        $("#warning").addClass("fadeInUp");
+    }
+},5000);
     
-
-    
-    
+//    remove error if request was succcessful
+setInterval(function(){
+    if(dataSuccess) {
+        $("#warning").addClass("hidden");
+    }
+},500);
+      
     
     
 });
