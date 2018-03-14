@@ -2,7 +2,7 @@ body {
     background: #383e47;
 }
 h2 {
-    margin: 0px 0px;
+    margin: 10px 0px;
 }
 input {
     transition: 300ms;
@@ -20,35 +20,39 @@ input:focus {
 #adjuster {
     max-width: 500px;
     margin: auto;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 #adjuster img {
-    width: 25px;
-    height: 17px;
+    transition: 300ms;
+    width: 350x;
+    height: 30px;
     margin-bottom: -20px;
+    opacity: 0.6;
 }
-#adjuster img:hover {
-    cursor: pointer;
-}
+
 .arrowDown {
     margin-right: -60px;
 }
 .arrowUp {
    margin-left: -60px;
 }
+#adjuster img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
 .number {
     font-size: 20px;
 }
 .clock {
     font-size: 50px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 #error {
     color: #913f3e;
     font-size: 18px;
 }
 button {
-    transition: 600ms;
+    transition: 300ms;
     border-radius: 5px;
     background-color: #655c50;
     border-style: none;
@@ -56,24 +60,26 @@ button {
     font-family: "Dosis";
     width: 90px;
     margin-top: 10px;
+    opacity: 0.7;
     
 }
 button:hover {
     cursor: pointer;
+    opacity: 1;
 }
 .block {
     margin-top: 40px;
 }
 .box {
     transition: 700ms;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 20%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 5px;
     background-color: #655c50;
-    opacity: 0.2;
+    opacity: 0;
 }
 .breakRed {
     opacity: 1;
@@ -95,10 +101,13 @@ button:hover {
     cursor: pointer;
 }
 @keyframes spinner {
-    from {
+    0% {
       
     }
-    to {
-        transform: rotate(360deg);
+    80% {
+        transform: rotate(330deg);
+    }
+    100% {
+        transform: rotate(30deg)
     }
 }

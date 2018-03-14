@@ -4,10 +4,11 @@ p {
 
 #calculator {
     background: #8f9093;
-    width: 90%;
+    width: 98%;
+    height: 365px;
     max-width: 300px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 90px;
     padding-top: 40px;
     padding-right: 30px;
     padding-left: 30px;
@@ -26,7 +27,8 @@ p {
 }
 
 .button p {
-
+    padding-top: 6px;
+    height: 28px;
     text-align: center;
     text-indent: 0;
     border-radius: 10px;

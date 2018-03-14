@@ -13,9 +13,12 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
     <!--    links to my stylesheets-->
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/pages.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/pomodoro.css">
-    <link rel="stylesheet" href="/css/animate.css">
+    
+    
     
     <!--    Link to Favicon-->  
     <link rel="icon" href="/img/favicon.ico?" type="image/x-icon">
@@ -25,6 +28,16 @@
 </head>
     
 <body>
+    
+    <div class="container">
+        <div id="header" class="container">
+            <a href="/pages/projects.html"><div id="headerButton" class="hidden accent downSlow">
+                <h3>BACK</h3>
+            </div></a>        
+        </div>
+    </div>
+    
+    
 <!--    Page content here...............................................................................-->
     <div class="fadeIn">
         <audio id="alarm"><source src="/audio/alarm.mp3" type="audio/mpeg"></audio>
@@ -55,7 +68,7 @@
                     <button id="breakUpdate">Update</button>   
                 </div>   
             </div>
-            <h2 style="font-size: 17px">Alarm Audio: <span id="audio" class="off">OFF</span> </h2>
+            <h2 style="font-size: 17px; margin-top:20px;">Alarm Audio: <span id="audio" class="off">OFF</span> </h2>
             <h2 id="error"></h2>
         </div>
         
@@ -70,6 +83,7 @@
     
 <!--    Links to my JS-->
     <script src="/js/pomodoro.js"></script>
+    <script src="/js/pages.js"></script>
 </body>
     
     
