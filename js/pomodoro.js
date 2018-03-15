@@ -193,6 +193,7 @@ $(document).ready(function() {
             $(".box").removeClass("breakRed");
             $(".box").removeClass("sessionGreen");
             document.title = "Pomodoro Clock";
+            $("link[rel*='icon']").attr("href", "/img/pomo.ico?");
             
         } else {
             $("#minutes").html(sessionTime);
@@ -212,6 +213,7 @@ $(document).ready(function() {
         var clock = function() { 
         if(sessionTimeSeconds > 0) {
             currentState = "Session";
+            $("link[rel*='icon']").attr("href", "/img/session.ico?");
             var seconds = sessionTimeSeconds % 60;
             var minutes = Math.floor(sessionTimeSeconds/60);
             if (seconds < 10) {
@@ -241,6 +243,7 @@ $(document).ready(function() {
             $(".box").addClass("breakRed");
         } else if(breakTimeSeconds > 0) {
             currentState = "Break";
+            $("link[rel*='icon']").attr("href", "/img/break.ico?");
             var seconds = breakTimeSeconds % 60;
             var minutes = Math.floor(breakTimeSeconds/60);
             if (seconds < 10) {
