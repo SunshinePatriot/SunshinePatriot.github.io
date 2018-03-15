@@ -5,25 +5,28 @@ input[type=text] {
 }
 
 input[type=text] {
-    transition: 400ms;
+    transition: 300ms;
     border-radius: 20px;
     border: none;
     padding: 5px;
     padding-left: 20px;
-    background-color: #8d9692;
+    background-color: #b0b3b7;
     color: #232b26;
+    width: 80%;
     max-width: 500px;
 }
-/* When the input field gets focus, change its width to 30% */
+/* When the input field gets focus, change its width*/
 input[type=text]:focus {
-    transition: 300ms;
     width: 90%;
     background-color: #f0f0f0;
-    max-width: 600px;
+    max-width: 550px;
 }
 
 .search {
+    transition: 200ms;
+    margin-top: 20px;
     color: #769693;
+    margin-bottom: 80px;
 }
 
 .search:hover {
@@ -32,8 +35,8 @@ input[type=text]:focus {
 }
 
 #error {
-    color: red;
-    opacity: 0.5;
+    color: #894040;
+    margin-top: -50px;
 }
 
 .hidden {
@@ -41,7 +44,7 @@ input[type=text]:focus {
 }
 
 .resultBlock {
-    background-color: #2a3532;
+    background-color: #4c4c4c;
     margin: 20px;
     padding: 2px 15px;
     border-radius: 10px;
@@ -49,10 +52,77 @@ input[type=text]:focus {
 }
 
 .resultBlock h2 {
+    transition: 200ms;
+    margin-top: 10px;
     color: #769693;
+}
+
+.resultblock h2:hover {
+    color: #d0d0d0;
 }
 
 
 .resultBlock p {
     font-size: 16px;
 }
+
+#random {
+    transition: 200ms;
+    text-decoration: none;
+    color: #769693;
+}
+
+#random:hover {
+    cursor: pointer;
+    color: #d0d0d0;
+}
+
+
+.spinner {
+    transition: 300ms;
+    width: 20px;
+    height: 20px;
+/*    background: #eee;*/
+    border-radius: 50%;
+    position: relative;
+    margin: 20px;
+    display: inline-block;
+}
+
+.spinner::before, .spinner::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.spinner::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid transparent;
+    border-top-color: #769693;
+    border-bottom-color: #769693;
+    animation: spin 500ms linear infinite
+}
+
+@keyframes spin {
+    0% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(180deg) scale(1.3);
+    }
+    100% {
+        opacity: 0.5;
+        transform: rotate(360deg) scale(1);
+    }
+    
+    
+}
+
+
+
