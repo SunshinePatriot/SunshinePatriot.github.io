@@ -17,6 +17,7 @@ p {
 }
 
 #screen {
+    overflow: hidden;
     background: #e5e2d3;
     border-radius: 10px;
     height: 65px;

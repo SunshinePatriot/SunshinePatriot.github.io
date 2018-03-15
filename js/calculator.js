@@ -214,7 +214,7 @@ $(document).ready(function() {
             $("#display").html(display); 
         }
         
-        if ($("#display").width() > 300) {
+        if ($("#display").width() > 250) {
             $("#display").html("EXCEEDED LIMIT"); 
         }
     }, 100)

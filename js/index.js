@@ -4,27 +4,7 @@ $(document).ready(function() {
     $("#headerCollapse").removeClass("openMenu");
     $("#headerCollapse").removeClass("closeMenu");
     
-        
-      setTimeout(function(){
-       $(".downQuick").addClass("animated fadeInDown");
-       $(".downQuick").removeClass("hidden");
-   }, 200);
-    
-   setTimeout(function(){
-       $(".upSlow").addClass("animated fadeInUp");
-       $(".upSlow").removeClass("hidden");
-   }, 300); 
-    
-    setTimeout(function(){
-       $(".slowFade").addClass("animated fadeIn");
-       $(".slowFade").removeClass("hidden");
-   }, 300);   
-        
 
-
-   
-    
-    
     $("#hamburger").on('click', function(){
        
         if(menuOpen) {
